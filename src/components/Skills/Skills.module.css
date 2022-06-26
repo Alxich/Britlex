@@ -1,0 +1,151 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 78px 0 82px 0;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 18px 18px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "item-1 item-2 item-3"
+        "item-1 item-4 item-4";
+}
+
+.grid_item {
+    position: relative;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 35px 22px;
+}
+
+.grid_item img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+  
+.item_1 { 
+    grid-area: item-1; 
+}
+
+.item_1 .image {
+    max-height: 390px;
+    max-width: 390px;
+}
+
+.item_2 { 
+    justify-content: space-between;
+    grid-area: item-2; 
+}
+
+.item_2 .image {
+    max-height: 293px;
+    max-width: 293px;
+    margin-left: auto;
+}
+
+.item_3 { 
+    justify-content: space-between;
+    grid-area: item-3; 
+}
+
+.item_3 .image {
+    max-height: 247px;
+    max-width: 371px;
+    margin-left: auto;
+}
+
+.item_4 { 
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    grid-area: item-4; 
+}
+
+.item_4 .image {
+    max-height: 255px;
+    max-width: 382px;
+    margin-left: auto;
+}
+
+.item_4 .grid_container {
+    max-width: 336px;
+    margin-right: 15px;
+}
+
+.grid_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+}
+
+.image {
+    display: flex;
+    overflow: hidden;
+}
+  
+.grid_title {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #263238;
+    margin: 0 0 10px 0;
+}
+
+.grid_title h4 {
+    font-size: inherit;
+    margin: 0;
+}
+
+.grid_text {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #8F95A5;
+    margin: 0 0 35px 0;
+}
+
+.grid_text p {
+    font-size: inherit;
+}
+
+.button {
+    background-color: #263238;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 60px;
+    max-width: 230px;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.button p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.button:hover {
+    background-color: #000000;
+}

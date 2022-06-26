@@ -1,0 +1,63 @@
+#colophon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.logo {
+    display: flex;
+    height: 54px;
+    width: 106px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #C4C4C4;
+    max-width: 1340px;
+    height: 100%;
+    width: 100%;
+}
+
+.policies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #8F95A5;
+    transition: color 0.4s ease-in-out;
+}
+
+.item:hover {
+    color: #000000;
+}
+
+.item:hover .separator {
+    color: #8F95A5;
+}
+
+.item:last-child .separator {
+    display: none;
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.separator {
+    display: block;
+    margin: 0 5px;
+    color: #8F95A5;
+}
